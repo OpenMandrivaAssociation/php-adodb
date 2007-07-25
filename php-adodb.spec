@@ -1,7 +1,7 @@
 %define base_name	adodb
 %define name		php-%{base_name}
 %define	maj_ver		4
-%define	min_ver		91
+%define	min_ver		95a
 %define version		%{maj_ver}.%{min_ver}
 %define	src_ver		%{maj_ver}%{min_ver}
 
@@ -68,4 +68,3 @@ rm -f %{buildroot}%{_datadir}/*.txt
 %doc *.txt docs/*
 %{_datadir}/%{name}
 /var/www/icons/*
-
