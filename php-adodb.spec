@@ -1,7 +1,7 @@
 %define base_name	adodb
 %define name		php-%{base_name}
-%define	maj_ver		4
-%define	min_ver		95a
+%define	maj_ver		5
+%define	min_ver		01
 %define version		%{maj_ver}.%{min_ver}
 %define	src_ver		%{maj_ver}%{min_ver}
 
@@ -13,7 +13,7 @@ Epoch:		1
 License:	BSD
 Group:		Development/Other
 URL:		http://adodb.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/adodb/%{base_name}%{src_ver}.tar.bz2
+Source0:	http://prdownloads.sourceforge.net/adodb/%{base_name}%{src_ver}beta.tgz
 BuildArch:	noarch
 Obsoletes:	ADOdb
 Obsoletes:	%{base_name}
@@ -30,7 +30,7 @@ library to hide the differences between the different databases
 (encapsulate the differences) so we can easily switch databases. 
 
 %prep
-%setup -q -n adodb
+%setup -q -n adodb5
 
 find . -type d -perm 0700 -exec chmod 755 {} \;
 find . -type f -perm 0555 -exec chmod 755 {} \;
