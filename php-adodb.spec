@@ -1,36 +1,25 @@
-%define base_name	adodb
-%define name		php-%{base_name}
-%define	maj_ver		5
-%define	min_ver		01
-%define version		%{maj_ver}.%{min_ver}
-%define	src_ver		%{maj_ver}%{min_ver}
-
 Summary:	Active Data Objects Data Base (ADOdb)
-Name:		%{name}
-Version:	%{version}
+Name:		php-adodb
+Version:	4.95
 Release:	%mkrel 1
-Epoch:		1
 License:	BSD
-Group:		Development/Other
+Group:		Development/PHP
 URL:		http://adodb.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/adodb/%{base_name}%{src_ver}beta.tgz
+Source0:	http://prdownloads.sourceforge.net/adodb/adodb495a.tgz
 BuildArch:	noarch
-Obsoletes:	ADOdb
-Obsoletes:	%{base_name}
-Provides:	ADOdb
-Provides:	%{base_name}
+Epoch:		2
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
-PHP is a wonderful language for building dynamic web pages.
-Unfortunately, PHP's database access functions are not
-standardised. Every database extension uses a different and
-incompatibile API. This creates a need for a database class
-library to hide the differences between the different databases
+PHP is a wonderful language for building dynamic web pages. Unfortunately,
+PHP's database access functions are not standardised. Every database
+extension uses a different and incompatibile API. This creates a need for a
+database class library to hide the differences between the different databases
 (encapsulate the differences) so we can easily switch databases. 
 
 %prep
-%setup -q -n adodb5
+
+%setup -q -n adodb
 
 find . -type d -perm 0700 -exec chmod 755 {} \;
 find . -type f -perm 0555 -exec chmod 755 {} \;
