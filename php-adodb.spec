@@ -8,7 +8,6 @@ URL:		http://adodb.sourceforge.net/
 Source0:	http://prdownloads.sourceforge.net/adodb/adodb495a.tgz
 BuildArch:	noarch
 Epoch:		2
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 PHP is a wonderful language for building dynamic web pages. Unfortunately,
