@@ -1,14 +1,14 @@
 Summary:	Active Data Objects Data Base (ADOdb)
 Name:		php-adodb
-Version:	4.95
+Version:	5.05
 Release:	%mkrel 1
 License:	BSD
 Group:		Development/PHP
 URL:		http://adodb.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/adodb/adodb495a.tgz
+Source0:	http://prdownloads.sourceforge.net/adodb/adodb505.tgz
 BuildArch:	noarch
 Epoch:		2
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 PHP is a wonderful language for building dynamic web pages. Unfortunately,
@@ -19,7 +19,7 @@ database class library to hide the differences between the different databases
 
 %prep
 
-%setup -q -n adodb
+%setup -q -n adodb5
 
 find . -type d -perm 0700 -exec chmod 755 {} \;
 find . -type f -perm 0555 -exec chmod 755 {} \;
@@ -35,7 +35,7 @@ done
 %build
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 install -d %{buildroot}/var/www/icons
 install -d %{buildroot}%{_datadir}/%{name}
@@ -50,7 +50,7 @@ rm -f %{buildroot}%{_datadir}/*.zip
 rm -f %{buildroot}%{_datadir}/*.txt
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
