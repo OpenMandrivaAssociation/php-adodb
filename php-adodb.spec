@@ -1,11 +1,11 @@
 Summary:	Active Data Objects Data Base (ADOdb)
 Name:		php-adodb
-Version:	5.12
+Version:	5.16a
 Release:	%mkrel 1
 License:	BSD
 Group:		Development/PHP
 URL:		http://adodb.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/adodb/adodb512.zip
+Source0:	http://downloads.sourceforge.net/adodb/adodb516a.zip
 BuildRequires:	unzip
 BuildArch:	noarch
 Epoch:		2
