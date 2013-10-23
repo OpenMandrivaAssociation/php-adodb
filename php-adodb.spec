@@ -1,15 +1,14 @@
 Summary:	Active Data Objects Data Base (ADOdb)
 Name:		php-adodb
-Version:	5.16a
-Release:	%mkrel 1
+Version:	5.18
+Release:	1
 License:	BSD
 Group:		Development/PHP
 URL:		http://adodb.sourceforge.net/
-Source0:	http://downloads.sourceforge.net/adodb/adodb516a.zip
+Source0:	http://downloads.sourceforge.net/adodb/adodb518a.tgz
 BuildRequires:	unzip
 BuildArch:	noarch
 Epoch:		2
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 PHP is a wonderful language for building dynamic web pages. Unfortunately,
@@ -24,7 +23,6 @@ database class library to hide the differences between the different databases
 %build
 
 %install
-rm -rf %{buildroot}
 
 install -d %{buildroot}/var/www/icons
 install -d %{buildroot}%{_datadir}/php/adodb
@@ -38,10 +36,8 @@ rm -rf %{buildroot}%{_datadir}/php/adodb/docs
 rm -f %{buildroot}%{_datadir}/php/adodb/*.txt
 
 %clean
-rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc *.txt docs/*
 %{_datadir}/php/adodb
 /var/www/icons/*
@@ -150,4 +146,5 @@ rm -rf %{buildroot}
 
 * Fri Aug 22 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 3.72-1mdk
 - 3.72
+
 
