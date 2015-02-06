@@ -1,7 +1,7 @@
 Summary:	Active Data Objects Data Base (ADOdb)
 Name:		php-adodb
 Version:	5.18
-Release:	1
+Release:	2
 License:	BSD
 Group:		Development/PHP
 URL:		http://adodb.sourceforge.net/
