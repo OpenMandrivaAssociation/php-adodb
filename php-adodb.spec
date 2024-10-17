@@ -4,7 +4,7 @@ Version:	5.18
 Release:	2
 License:	BSD
 Group:		Development/PHP
-URL:		http://adodb.sourceforge.net/
+URL:		https://adodb.sourceforge.net/
 Source0:	http://downloads.sourceforge.net/adodb/adodb518a.tgz
 BuildRequires:	unzip
 BuildArch:	noarch
